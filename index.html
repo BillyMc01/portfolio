@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index-styles.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+     <nav>
+        <div class="left"> <!-- Div for nav elements on right side-->
+            <a href="/">Billy McCarthy</a> <!-- '/' links to home page-->
+        </div> 
+
+        <div class="right"> <!-- Div for nav elements on left side-->
+            <a href="http://github.com" target="_blank" rel="noopener noreferrer"> <!-- Link opens to a new page-->
+                <i class="fa-brands fa-github"></i> <!-- Github icon-->
+                <span>Github</span>
+            </a>
+
+            <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"> <!-- Link opens to a new page-->
+                <i class="fa-brands fa-linkedin"></i> <!-- Linkedin icon-->
+                <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:billymccarthy04@gmail.com"> <!-- Link to email address-->
+                <i class="fa-solid fa-envelope"></i> <!-- Email icon-->
+                <span>Email</span>
+            </a>
+        </div>
+     </nav>
+    <main>
+        <!-- SECTION 1: Hero -->
+         <section class="hero-section">
+            <div class="text"> <!-- Class for the main text and links-->
+                <h2>Hi, I'm Billy 👋</h2>
+                <p>I am an aspiring software/web developer with interests in UI/UX, Python and SQL databases. 
+                    As a graduate from the University of Greenwich with a Bachelor's Degree, I am seeking
+                    an apprenticeship, internship or other work opportunities to gain hands-on experience 
+                    in building real applications. Some of my <a href="#projects">projects</a> include modifying an AI assistant using Python, 
+                    prototyping a User Interface for a Children’s reading application and creating an online web-form for reporting lost property using WordPress.</p>
+
+                    <div class="links">
+                        <a href="#skills"> <!-- Link to skills section-->
+                            <i class="fa-solid fa-code"></i> <!-- Code icon-->
+                            <span>Skills</span> <!-- Text for link-->
+                        </a>
+
+                        <a href="#testimony"> <!-- Link to testimony section-->
+                            <i class="fa-solid fa-book"></i> <!-- Book icon-->
+                            <span>Testimony</span> <!-- Text for link-->
+                        </a>
+
+                        <a href="#projects"> <!-- Link to projects section-->
+                            <i class="fa-solid fa-diagram-project"></i> <!-- Peoject icon-->
+                            <span>Projects</span> <!-- Text for link-->
+                        </a>
+
+                        <a href="#contact"> <!-- Link to contact section-->
+                            <i class="fa-solid fa-envelope"></i> <!-- Mail icon-->
+                            <span>Contact</span> <!-- Text for link-->
+                        </a>
+                    </div>
+            </div>
+
+            <div class="headshot"> <!-- Class for the headshot-->
+                <img src="images/hero-headshot.webp"
+                alt="Billy McCarthy Headshot"> <!-- Webp is best for webpages-->
+            </div>
+         </section>
+
+        <!-- SECTION 2: Skills -->
+         <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                <p>I have a veriety of skills relating to software, web and UI/UX development as listed bellow.
+                   Look at my <a href="#projects">projects</a> section to find out more about my skills!
+                </p>
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="HTML logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/css-logo.webp" alt="CSS logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/Python-logo.webp" alt="Python logo">
+                    <span>Python</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/Mysql_logo.webp" alt="MySQL logo">
+                    <span>MySQL</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/Axure-Logo.webp" alt="AxureRP logo">
+                    <span>AxureRP</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/Wordpress-logo.webp" alt="WordPress logo">
+                    <span>WordPress</span>
+                </div>
+            </div>
+         </section>
+        
+        <!-- SECTION 3: Testimony -->
+         <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group"> <!-- Class for grouping the bellow objects together-->
+                <div class="person-details">
+                    <img src="images/testimony-headshot.webp" alt="Testimony headshot">
+                    <p>Billy McCarthy</p>
+                    <p>Graduate at University of Greenwich</p>
+                </div>
+        
+                <div class="text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit labore, 
+                at molestias ad nobis minus ea voluptatibus eum odio unde blanditiis a neque est quod, 
+                quasi ipsam vel saepe quibusdam voluptatum laudantium voluptates ducimus beatae. 
+                Porro autem illum vitae harum molestiae expedita optio officiis, 
+                officia accusantium facere commodi voluptatum?"
+                </div>
+            </div>
+                
+         </section>
+        
+        <!-- SECTION 4: Projects--> 
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2> 
+            <div class="text">
+                 I have worked on a variety of projects in the past including modifying an AI assistant using Python, 
+                 prototyping a User Interface for a Children’s reading application and creating an online web-form for reporting lost property using WordPress.
+                 Use the interactive cards below to find out more information!
+            </div>
+
+            <div class="link-cells">
+                <div class="link-cell">
+                    <a href="python.html">
+                        <img src="images/Python-logo.webp" alt="Python logo">
+                        <span>Python Projects</span>
+                    </a>
+                </div>
+
+                <div class="link-cell">
+                    <a href="axure.html">
+                        <img src="images/Axure-Logo.webp" alt="AxureRP logo">
+                        <span>Axure Projects</span>
+                    </a>
+                </div>
+
+                <div class="link-cell">
+                    <a href="web.html">
+                        <img src="images/html-logo.webp" alt="HTML logo">
+                        <span>Web Projects</span>
+                    </a>
+                </div>
+
+                <div class="link-cell">
+                    <a href="sql.html">
+                        <img src="images/Mysql_logo.webp" alt="MySQL logo">
+                        <span>SQL Projects</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: Contact -->
+         <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">
+                    If you have any enquiries and would like to contact me, use the form provided or send
+                    me an <a href="mailto:billymccarthy04@gmail.com">email</a>. I will try to respond asap!
+                    <br>
+                    <br>
+                    My email is: billymccarthy04@gmail.com
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit" id="submit-button">Send Message</button>
+                </form>
+            </div>
+         </section>
+    </main>
+</body>
+</html>

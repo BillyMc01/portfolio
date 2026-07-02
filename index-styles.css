@@ -1,0 +1,417 @@
+:root { /* Root variables */
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* { /*Resetting default settings by targeting every element*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { /*Targeting html tag*/
+    scroll-behavior: smooth;
+}
+
+body { /*Targeting body*/
+    font-family: 'Poppins', sans-serif; /*Setting default font and a backup font (sans serif) encase it can't load*/
+    background-color: var(--background-color); /*Using root var to set BG colour*/
+    max-width: 1400px; /*Fixes the maximum width*/
+    margin: 0 auto; /*Fixes the page to the centre*/
+}
+
+a { /*Targeting links*/
+    color: var(--link-color); /*Set link colour*/
+    text-decoration: none; /*Removes underline from links*/
+}
+
+/* NAVBAR */
+nav {
+    display: flex; /*Splits the elements to the left and right*/
+    justify-content: space-between; /*Adds space between the elements*/
+    align-items: center; /*Ensures that items are aligned centrally*/
+    padding: 0 50px; /*Adds padding for the X-axis*/
+    height: 80px; /*Sets a fixed hight for the navbar*/
+}
+
+nav .left a { /* Targeting the link element in the left-side nav*/
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600; /*Uses respective google font weight that was selected (poppins 600)*/
+}
+
+nav .right a { /* Targeting the link elements in the right-side nav*/
+    color: var(--text-color);
+    margin: 8px; /*Adds spacing between the elements*/
+}
+
+nav .right a:last-child { /*Targets the last element in this section (email)*/
+    color: var(--background-color); /*Uses an inverted scheme*/
+    background-color: var(--text-color); /*Uses an inverted scheme*/
+    padding: 5px 15px; /*Sets padding for the Y and X axis*/
+    border-radius: 5px; /*Makes the edges curved*/
+}
+
+nav .right a span { /*Targets the text in the right-side elements*/
+    margin-left: 3px; /*Adds spacing between the icons and text*/
+}
+
+/*Section 1: Hero*/
+.hero-section { /*Targets the whole hero section*/
+    display: flex; /*Splits the elements to the left and right*/
+    justify-content: space-between; /*Adds space between the elements*/
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0; /*Adds a margin on the Y axis that adds space between the navbar and hero*/
+    gap: 40px; /*Adds a gap between the elements*/
+    margin-bottom: 100px; /*Adds a gap between the hero and testimony*/
+}
+
+.hero-section .text { /*Targets just the text*/
+    flex: 5; /*Dividing the space between the text and headshot*/
+}
+
+.hero-section .text h2 { /*Targets h2 elements in the text section*/
+    font-size: 45px;
+}
+
+.hero-section .text .links { /*Targets the links*/
+    margin-top: 25px; /*Adds a margin to the top*/
+
+}
+
+.hero-section .text .links a { /*Targets anchor tags in the links section*/
+    display: inline-block; /*Sticks the icons to the span text so that they stay together when the screen is made smaller*/
+    padding: 5px 10px;
+    border: 2px solid var(--link-color); /*Adds a border to the links*/
+    border-radius: 5px; /*Makes edges curved*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s; /*Adds a transition effect when the links are hovered over*/
+}
+
+.hero-section .text .links a:hover { /*Targets when the cursor hovers over the links*/
+    color: var(--text-color);
+    border: 2px solid var(--text-color)
+}
+
+.hero-section .headshot { /*Targets just the headshot*/
+    flex: 2; /*Dividing the space between the text and headshot*/
+    display: flex;
+    justify-content: right; /*Pushes headshot to the right*/
+}
+
+.hero-section .headshot img { /*Targets just the image*/
+    border-radius: 50%; 
+    width: 350px;
+}
+
+.hero-section .text a:hover {
+    color: var(--text-color);
+    transition: .1s;
+}
+
+/*Section 2: Skills*/
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .text a:hover {
+    color: var(--text-color);
+    transition: .1s;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*Esnures that cells wrap for responsiveness*/
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /*Adds a gap between the icon and text*/
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain; /*Ensures that the whole image displays without appearing streached*/
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+/*Section 3: Testimony*/
+.testimony-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimony-section .person-details {
+    text-align: center;
+    flex: 2; /*Use flex to define the amount of space that an object/group will have compared to others in the same
+    class*/
+}
+
+.testimony-section .group .text {
+    flex: 8;
+}
+
+.testimony-section .person-details img {
+    aspect-ratio: 1/1;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimony-section .person-details p {
+    font-weight: 600;
+}
+
+.testimony-section .person-details p:last-child {
+    font-weight: normal; /*Targets the title and not the name, ensuring that only the name is bold*/
+}
+
+/*Section 4: Projects*/
+.projects-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 35px;
+}
+
+.projects-section .text {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.projects-section .link-cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*Esnures that cells wrap for responsiveness*/
+}
+
+.projects-section .link-cells .link-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /*Adds a gap between the icon and text*/
+    width: 500px;
+    height: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.projects-section .link-cells .link-cell span {
+    font-size: 25px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+.projects-section .link-cells .link-cell img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+
+.projects-section .link-cells .link-cell:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    transition: .1s;
+}
+/*Section 5: Contact*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea { /*Targeting the form elements on the page include 
+    input boxes and textarea box*/
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none; /*Removes the outline when a box is highlighted*/
+    resize: none; /*Textarea box cannot be resized*/
+}
+
+.contact-section .group form button {
+    font-size: 16px; /*Default size*/
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer; /*Turns the cursor into a pointer when the user hovers over it*/
+    transition: .1s; /*Adding a transition to the hover*/
+}
+
+.contact-section .group form button:hover { /*Button hovering psuedo class*/
+    filter: brightness(.9); /*Diming the button by 10%*/
+}
+
+.contact-section .text a:hover {
+    color: var(--text-color);
+    transition: .1s;
+}
+
+@media (max-width: 850px) { /*Media query that only applies following statements when the width is bellow 850px*/
+    /*Section 1: Hero*/
+    .hero-section .text h2 {
+        font-size: 35px; /*Changes the h2 font size to 35px*/
+    }
+}
+
+@media (max-width: 740px) { /*Media query that only applies following statements when the width is bellow 740px*/
+    /*Section 1: Hero*/
+    .hero-section {
+        flex-direction: column-reverse; /*Moves the headshot to ontop of the text suiting a mobile interface*/
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+    }
+
+    /*Section 3: Testimony*/
+    .testimony-section {
+        text-align: center;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+    }
+
+    /*Section 4: Projects*/
+    .projects-section {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .projects-section .link-cells .link-cell span {
+        font-size: 25px;
+    }
+
+    .projects-section .link-cells .link-cell {
+        width: 350px;
+    }
+
+    /*Section 5: Contact*/
+    .contact-section .group {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 610px) { /*Media query that only applies following statements when the width is bellow 610px*/
+    /*Navbar*/
+    nav {
+        padding: 0 20px; /*Changes X-axis padding to 20px*/
+    }
+
+    nav .right a { /*Targets the links*/
+        font-size: 25px; /*Making the elements bigger*/
+    }
+
+    nav .right a:last-child { /*Targets the email element*/
+        color: var(--text-color); /*Reverting the scheme for the email element*/
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span { /*Targets the text in the right-side elements*/
+        display: none; /*Removes the text*/
+    }
+
+    /*Section 1: Hero*/
+    .hero-section {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    .hero-section .links { /*Targeting links in hero section*/
+        display: flex;
+        justify-content: center; /*Changes the links to be central to suit mobile interfaces*/
+    }
+
+    /*Section 2: Skills*/
+    .skills-section {
+        padding: 0 20px;
+    } 
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+
+    /*Section 3: Testimony*/
+    .testimony-section {
+        padding: 0 20px;
+    }
+
+    /*Section 5: Contact*/
+    .contact-section {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="web-styles.css">
+
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="index.html">Billy McCarthy</a>
+        </div>
+
+        <div class="right">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                 <i class="fa-brands fa-github"></i>
+                 <span>Github</span>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:billymccarthy04@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: Top -->
+        <section class="top">
+            <div class="text">
+                <h2>Web Projects</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quaerat. 
+                    Sit, itaque ducimus culpa architecto vitae enim ut nihil vel, 
+                    provident debitis quae tempora quaerat quam, nemo voluptate ipsum saepe!</p>
+
+                <div class="links">
+                        <a href="#Reporting-system"> <!-- Link to Reading App section-->
+                            <span>Lost it? Report! System</span> <!-- Text for link-->
+                        </a>
+                    </div>
+            </div>
+
+            <div class="picture">
+                <img src="images/html-logo.webp"
+                alt="HTML Logo"> <!-- Webp is best for webpages-->
+                <img src="images/Wordpress-logo.webp"
+                alt="WordPress Logo"> <!-- Webp is best for webpages-->
+            </div>
+        </section>
+
+        <!-- SECTION 2: Lost it? Report it! System-->
+         <section class="reporting-system" id="Reporting-system">
+            <div class="text-system">
+                <h2>Lost it? Report it! Website</h2>
+                <p>Following is a prototype website created for the Final Year Project of the BSc Computing course at Greenwich University.
+                    The prototype is named "Lost it? Report it!" and includes a form for reporting property that is lost on London's bus and
+                    tube networks. The objective of the Lost it? Report it! prototype was to improve on some of the UI/UX faults that were 
+                    discovered in existing systems for reporting property lost on public transport. The website was designed using WordPress which
+                    connects to a google-sheet using a google API.
+                </p>
+            </div>
+
+            <div class="content">
+                <h3>Home Page</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/main_page.webp" width="350" height="250">
+                    <p>The home page includes the most recent story that the user was reading, this makes it easy to continue where the
+                        reader left off. The prototype also makes heavy use of Axure's dynamic pannels to display the content. This design choice
+                        was chosen due to the ability to swipe to access different pannel states, therefore suiting a mobile interface.
+                    </p>
+
+                </div>
+
+                <h3>Stories Page</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/stories_page.webp" width="350" height="250">
+                    <p>The stories page is where the user will go to access new stories and is accessible via swiping upwards on the home page.
+                        This page includes a list of recommended stories and a search section accessible via tapping the search button in the top right
+                        of the page.
+                    </p>
+                </div>
+
+                <h3>Quizzes Page</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/quizzes_page.webp" width="350" height="250">
+                    <p>Like with the stories page, the quizzes page is where the user will access quizzes relating to the stories that they have read.
+                        This page also includes a search button where the user searches for more stories.
+                    </p>
+                </div>
+
+                <h3>Profile Info Page</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/profile-info-page.webp" width="350" height="250">
+                    <p>The profile information page is accessible via tapping the profile icon in the bottom right of the screen.
+                        This is where te user can customise their profile and see the history of the stories and quizzes they have completed.
+                    </p>
+                </div>
+
+                <h3>Settings Page</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/settings-page.webp" width="350" height="250">
+                    <p>The settings page is accessibile by tapping the gear icon in the bottom right of the screen above the paint icon.
+                        This is where the volume is adjusted and accessibility features are accessed.
+                    </p>
+                </div>
+
+                <h3>Colour Select Page</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/colour-select.webp" width="350" height="250">
+                    <p>The colour select page is accessibile by tapping the paint icon above the profile icon in the bottom right of the screen.
+                        This is where the user can change the colour accent of the app if desired.
+                    </p>
+                </div>
+
+                <h3>Story Mode</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/story_mode_page.webp" width="350" height="250">
+                    <p>This is what the page will look like when a story is being read with the content consisting of a
+                        picture with a short text describing the image. This page includes a button to turn on a screen reader,
+                        tp access the quiz and to return to the home page.
+                    </p>
+                </div>
+
+                <h3>Quiz Mode</h3>
+                <hr>
+                <div class="content-elements">
+                    <img src="axure-images/quiz_mode_page.webp" width="350" height="250">
+                    <p>The quiz mode page is similar in design to the story mode page but includes content for the quiz.
+                        The same buttons are used here but there is now an option to go back to the story.
+                    </p>
+                </div>
+            </div>
+         </section>
+    </main>
+</body>
