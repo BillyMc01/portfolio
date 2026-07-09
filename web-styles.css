@@ -58,7 +58,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     margin-left: 3px; /*Adds spacing between the icons and text*/
 }
 
-/*Section 1*/
+/*SECTION 1: Top*/
 .top { /*Targets the whole hero section*/
     display: flex; /*Splits the elements to the left and right*/
     justify-content: space-between; /*Adds space between the elements*/
@@ -66,7 +66,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     padding: 0 50px;
     margin: 50px 0; /*Adds a margin on the Y axis that adds space between the navbar and hero*/
     gap: 40px; /*Adds a gap between the elements*/
-    margin-bottom: 75px; /*Adds a gap between the hero and testimony*/
+    margin-bottom: 100px; /*Adds a gap between the hero and testimony*/
 }
 
 .top .text-top { /*Targets just the text*/
@@ -113,17 +113,21 @@ nav .right a span { /*Targets the text in the right-side elements*/
     transition: .1s;
 }
 
-/*Section 2*/
+/*SECTION 2: Prototype*/
 .text-system {
     padding: 0 50px;
     margin: 50px 0; /*Adds a margin on the Y axis that adds space between the navbar and hero*/ 
-    margin-bottom: 100px; /*Adds a gap between the hero and testimony*/  
+    margin-bottom: 50px; /*Adds a gap between the hero and testimony*/  
 }
 
 .text-system h2 {
     text-align: center;
     font-size: 35px;
     margin-bottom: 10px;
+}
+
+.video {
+    text-align: center;
 }
 
 .content {

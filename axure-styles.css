@@ -57,7 +57,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     margin-left: 3px; /*Adds spacing between the icons and text*/
 }
 
-/*Section 1: Python-Top*/
+/*SECTION 1: Top*/
 .top { /*Targets the whole hero section*/
     display: flex; /*Splits the elements to the left and right*/
     justify-content: space-between; /*Adds space between the elements*/
@@ -112,17 +112,21 @@ nav .right a span { /*Targets the text in the right-side elements*/
     transition: .1s;
 }
 
-/*Section 2*/
+/*SECTION 2: Reading App*/
 .text-app {
     padding: 0 50px;
     margin: 50px 0; /*Adds a margin on the Y axis that adds space between the navbar and hero*/ 
-    margin-bottom: 100px; /*Adds a gap between the hero and testimony*/  
+    margin-bottom: 50px; /*Adds a gap between the hero and testimony*/  
 }
 
 .text-app h2 {
     text-align: center;
     font-size: 35px;
     margin-bottom: 10px;
+}
+
+.video {
+    text-align: center;
 }
 
 .content {
@@ -152,16 +156,16 @@ nav .right a span { /*Targets the text in the right-side elements*/
     flex: 8;
 }
 
-/*Media Querries!*/
+
 @media (max-width: 850px) { /*Media query that only applies following statements when the width is bellow 850px*/
-    /*Top Section*/
+    /*SECTION 1: Top*/
     .top .text-top h2 {
         font-size: 35px; /*Changes the h2 font size to 35px*/
     }
 }
 
 @media (max-width: 740px) { /*Media query that only applies following statements when the width is bellow 740px*/
-    /*Top section*/
+    /*SECTION 1: Top*/
     .top {
         flex-direction: column-reverse; /*Moves the headshot to ontop of the text suiting a mobile interface*/
         text-align: center;
@@ -172,6 +176,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
         width: 250px;
     }
 
+    /*SECTION 2: Reading App*/
     .reading-app {
         flex-direction: column;
         text-align: center;

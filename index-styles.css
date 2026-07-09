@@ -43,7 +43,7 @@ nav .left a { /* Targeting the link element in the left-side nav*/
 
 nav .right a { /* Targeting the link elements in the right-side nav*/
     color: var(--text-color);
-    margin: 8px; /*Adds spacing between the elements*/
+    margin: 8px; /*Adds spacing between the different links*/
 }
 
 nav .right a:last-child { /*Targets the last element in this section (email)*/
@@ -54,10 +54,10 @@ nav .right a:last-child { /*Targets the last element in this section (email)*/
 }
 
 nav .right a span { /*Targets the text in the right-side elements*/
-    margin-left: 3px; /*Adds spacing between the icons and text*/
+    gap: 3px; /*Adds spacing between the icons and text*/
 }
 
-/*Section 1: Hero*/
+/*SECTION 1: Hero*/
 .hero-section { /*Targets the whole hero section*/
     display: flex; /*Splits the elements to the left and right*/
     justify-content: space-between; /*Adds space between the elements*/
@@ -112,7 +112,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     transition: .1s;
 }
 
-/*Section 2: Skills*/
+/*SECTION 2: Skills*/
 .skills-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -162,50 +162,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     font-size: 18px;
 }
 
-/*Section 3: Testimony*/
-.testimony-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.testimony-section h2 {
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-.testimony-section .group {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.testimony-section .person-details {
-    text-align: center;
-    flex: 2; /*Use flex to define the amount of space that an object/group will have compared to others in the same
-    class*/
-}
-
-.testimony-section .group .text {
-    flex: 8;
-}
-
-.testimony-section .person-details img {
-    aspect-ratio: 1/1;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.testimony-section .person-details p {
-    font-weight: 600;
-}
-
-.testimony-section .person-details p:last-child {
-    font-weight: normal; /*Targets the title and not the name, ensuring that only the name is bold*/
-}
-
-/*Section 4: Projects*/
+/*SECTION 3: Projects*/
 .projects-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -259,7 +216,8 @@ nav .right a span { /*Targets the text in the right-side elements*/
     border: 2px solid var(--text-color);
     transition: .1s;
 }
-/*Section 5: Contact*/
+
+/*SECTION 4: Contact*/
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -316,6 +274,20 @@ nav .right a span { /*Targets the text in the right-side elements*/
     transition: .1s;
 }
 
+/*SECTION 6: Atrribution*/
+.attribution-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.attribution-section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
 @media (max-width: 850px) { /*Media query that only applies following statements when the width is bellow 850px*/
     /*Section 1: Hero*/
     .hero-section .text h2 {
@@ -331,15 +303,6 @@ nav .right a span { /*Targets the text in the right-side elements*/
 
     .hero-section .headshot img {
         width: 300px;
-    }
-
-    /*Section 3: Testimony*/
-    .testimony-section {
-        text-align: center;
-    }
-
-    .testimony-section .group {
-        flex-direction: column;
     }
 
     /*Section 4: Projects*/
@@ -403,11 +366,6 @@ nav .right a span { /*Targets the text in the right-side elements*/
 
     .skills-section .cells .cell span {
         font-size: 16px;
-    }
-
-    /*Section 3: Testimony*/
-    .testimony-section {
-        padding: 0 20px;
     }
 
     /*Section 5: Contact*/
