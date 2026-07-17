@@ -114,7 +114,7 @@
 
                 <div class="cell">
                     <img src="images/Axure-Logo.webp" alt="AxureRP logo">
-                    <span>AxureRP</span>
+                    <span style="font-size: 13px;">UI/UX Prototyping</span>
                 </div>
 
                 <div class="cell">
@@ -136,9 +136,9 @@
             <div class="link-cells">
 
                 <div class="link-cell">
-                    <a href="axure.html">
+                    <a href="UIUX.html">
                         <img src="images/Axure-Logo.webp" alt="AxureRP logo">
-                        <span>Axure Projects</span>
+                        <span>UI/UX Projects</span>
                     </a>
                 </div>
 
@@ -163,26 +163,36 @@
                     My email is: billy.mccarthy204@gmail.com
                 </div>
 
-                <form>
+                <form method="post" action="https://sheetdb.io/api/v1/nxnnfmqrmpsm9" id="sheetdb-form">
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" name="data[name]">
 
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" name="data[email]">
 
                     <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <textarea name="data[message]" cols="30" rows="10"></textarea>
 
-                    <button type="submit" id="submit-button">Send Message</button>
+                    <button type="submit" name="submit-button">Send Message</button>
                 </form>
             </div>
          </section>
-        
         <!-- SECTION 5: Attribution -->
          <section id="attribution" class="attribution-section">
             <h2>Attribution</h2>
             <p>This Portfolio was developed with help from a Tutorial on Youtube by <a href="https://www.youtube.com/watch?v=Slxdo0Dqxlk" target="_blank" rel="noopener noreferrer">Under Ctrl</a></p>
          </section>
     </main>
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method : "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json())
+        })
+    </script>
 </body>
 </html>

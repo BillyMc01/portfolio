@@ -33,7 +33,6 @@ nav {
     align-items: center; /*Ensures that items are aligned centrally*/
     padding: 0 50px; /*Adds padding for the X-axis*/
     height: 80px; /*Sets a fixed hight for the navbar*/
-    margin-bottom: 100px;
 }
 
 nav .left a { /* Targeting the link element in the left-side nav*/
@@ -66,7 +65,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     padding: 0 50px;
     margin: 50px 0; /*Adds a margin on the Y axis that adds space between the navbar and hero*/
     gap: 40px; /*Adds a gap between the elements*/
-    margin-bottom: 100px; /*Adds a gap between the hero and testimony*/
+    margin-bottom: 75px; /*Adds a gap between the hero and testimony*/
 }
 
 .top .text-top { /*Targets just the text*/
@@ -78,12 +77,12 @@ nav .right a span { /*Targets the text in the right-side elements*/
     margin-bottom: 10px;
 }
 
-.top .text .links { /*Targets the links*/
+.top .text-top .links { /*Targets the links*/
     margin-top: 25px; /*Adds a margin to the top*/
 
 }
 
-.top .text .links a { /*Targets anchor tags in the links section*/
+.top .text-top .links a { /*Targets anchor tags in the links section*/
     padding: 5px 10px;
     border: 2px solid var(--link-color); /*Adds a border to the links*/
     border-radius: 5px; /*Makes edges curved*/
@@ -92,7 +91,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
     transition: .1s; /*Adds a transition effect when the links are hovered over*/
 }
 
-.top .text .links a:hover { /*Targets when the cursor hovers over the links*/
+.top .text-top .links a:hover { /*Targets when the cursor hovers over the links*/
     color: var(--text-color);
     border: 2px solid var(--text-color)
 }
@@ -105,7 +104,7 @@ nav .right a span { /*Targets the text in the right-side elements*/
 
 .top .picture img { /*Targets just the image*/
     border-radius: 50%; 
-    width: 125px;
+    width: 350px;
 }
 
 .top .text-top a:hover {
@@ -113,14 +112,14 @@ nav .right a span { /*Targets the text in the right-side elements*/
     transition: .1s;
 }
 
-/*SECTION 2: Prototype*/
-.text-system {
+/*SECTION 2: Reading App*/
+.text-app {
     padding: 0 50px;
     margin: 50px 0; /*Adds a margin on the Y axis that adds space between the navbar and hero*/ 
     margin-bottom: 50px; /*Adds a gap between the hero and testimony*/  
 }
 
-.text-system h2 {
+.text-app h2 {
     text-align: center;
     font-size: 35px;
     margin-bottom: 10px;
@@ -155,4 +154,61 @@ nav .right a span { /*Targets the text in the right-side elements*/
 
 .content-elements p {
     flex: 8;
+}
+
+
+@media (max-width: 850px) { /*Media query that only applies following statements when the width is bellow 850px*/
+    /*SECTION 1: Top*/
+    .top .text-top h2 {
+        font-size: 35px; /*Changes the h2 font size to 35px*/
+    }
+}
+
+@media (max-width: 740px) { /*Media query that only applies following statements when the width is bellow 740px*/
+    /*SECTION 1: Top*/
+    .top {
+        flex-direction: column-reverse; /*Moves the headshot to ontop of the text suiting a mobile interface*/
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .top .picture img {
+        width: 250px;
+    }
+
+    /*SECTION 2: Reading App*/
+    .reading-app {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .reading-app .content .content-elements {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+
+    .reading-app .content .content-elements img {
+        width: 450px;
+    }
+}
+
+@media (max-width: 610px) { /*Media query that only applies following statements when the width is bellow 610px*/
+    /*Navbar*/
+    nav {
+        padding: 0 20px; /*Changes X-axis padding to 20px*/
+    }
+
+    nav .right a { /*Targets the links*/
+        font-size: 25px; /*Making the elements bigger*/
+    }
+
+    nav .right a:last-child { /*Targets the email element*/
+        color: var(--text-color); /*Reverting the scheme for the email element*/
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span { /*Targets the text in the right-side elements*/
+        display: none; /*Removes the text*/
+    }
 }
